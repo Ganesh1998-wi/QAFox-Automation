@@ -54,7 +54,6 @@ public class Utils {
 					break;
 				}
 			}
-
 		}
 		return data;
 	}
