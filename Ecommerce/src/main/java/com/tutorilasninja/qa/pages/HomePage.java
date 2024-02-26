@@ -22,4 +22,18 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
+	public LoginPage NavigateToLogin() {
+		MyAccountButton.click();
+		LoginButton.click();
+		return new LoginPage(driver);
+	}
+	
+	public RegisterPage NavigateToRegistration() {
+		MyAccountButton.click();
+		LoginButton.click();
+		return new RegisterPage(driver);
+
+	}
 }
