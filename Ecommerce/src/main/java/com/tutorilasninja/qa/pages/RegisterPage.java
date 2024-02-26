@@ -34,4 +34,6 @@ public class RegisterPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 }
