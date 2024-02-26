@@ -7,15 +7,25 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	WebDriver driver;
-	
+
 	@FindBy(xpath = "//div[contains(@class,'form-group')]//input[@id='input-email']")
 	private WebElement EmailAddress;
-	
+
 	@FindBy(xpath = "//div[contains(@class,'form-group')]//input[@id='input-password']")
 	private WebElement Password;
+
+	@FindBy(xpath = "//input[@type='submit']")
+	private WebElement LoginButton;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public MyAccountPage LoginWithCredentials(String email, String password) {
+		EmailAddress.sendKeys(email);
+		Password.sendKeys(password);
+		LoginButton.click();
+		return new MyAccountPage(driver);
 	}
 }
