@@ -29,6 +29,12 @@ public class RegisterPage {
 	@FindBy(xpath = "//div[contains(@class,'col-sm-10')]/label/input[@value=1]")
 	private WebElement NewsLetter;
 
+	@FindBy(xpath = "//input[contains(@type,'checkbox')]")
+	private WebElement PrivacyPolicy;
+
+	@FindBy(xpath = "//input[contains(@value,'Continue')]")
+	private WebElement Continue;
+
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,7 +49,9 @@ public class RegisterPage {
 		Password.sendKeys(password);
 		ConfirmPassword.sendKeys(cpassword);
 		NewsLetter.click();
-		
+		PrivacyPolicy.click();
+		Continue.click();
+
 	}
 
 }
