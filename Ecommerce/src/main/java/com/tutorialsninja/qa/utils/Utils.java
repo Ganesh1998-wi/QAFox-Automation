@@ -37,8 +37,7 @@ public class Utils {
 		int row = sheet.getLastRowNum();
 		int cols = sheet.getRow(0).getLastCellNum();
 		Object[][] data = new Object[row][cols];
-		for (int i = 0; i < row; i++) {
-			XSSFRow rows = sheet.getRow(i + 1);
+		for (int i = 0; i < row; i++) {			XSSFRow rows = sheet.getRow(i + 1);
 			for (int j = 0; j < cols; j++) {
 				XSSFCell cell = rows.getCell(j);
 				CellType celltype = cell.getCellType();

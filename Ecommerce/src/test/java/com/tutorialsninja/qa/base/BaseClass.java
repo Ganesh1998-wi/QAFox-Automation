@@ -15,8 +15,8 @@ import com.tutorialsninja.qa.utils.Utils;
 
 public class BaseClass {
 	WebDriver driver;
-	Properties prop;
-	Properties testprop;
+	public Properties prop;
+	public Properties testprop;
 
 	public BaseClass() {
 		prop = new Properties();
