@@ -40,8 +40,8 @@ public class RegisterPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void RegisterWithDetails(String firstname, String lastname, String email, String phone, String password,
-			String cpassword) {
+	public AccountSuccessPage RegisterWithDetails(String firstname, String lastname, String email, String phone,
+			String password, String cpassword) {
 		FirstName.sendKeys(firstname);
 		LastName.sendKeys(lastname);
 		Email.sendKeys(email);
@@ -51,7 +51,7 @@ public class RegisterPage {
 		NewsLetter.click();
 		PrivacyPolicy.click();
 		Continue.click();
-
+		return new AccountSuccessPage(driver);
 	}
 
 }
