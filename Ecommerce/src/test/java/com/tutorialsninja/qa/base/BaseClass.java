@@ -42,11 +42,7 @@ public class BaseClass {
 
 	public WebDriver LaunchTheDriver(String BrowserName) {
 		if (BrowserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"D:\\Automation\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-			ChromeOptions options = new ChromeOptions();
-			options.setBinary("D:\\Automation\\chrome-win64\\chrome-win64\\chrome.exe");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 		} else if (BrowserName.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 		} else if (BrowserName.equalsIgnoreCase("firefox")) {

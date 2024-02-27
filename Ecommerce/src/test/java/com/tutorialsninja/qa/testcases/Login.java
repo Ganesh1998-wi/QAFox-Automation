@@ -45,8 +45,7 @@ public class Login extends BaseClass {
 	@Test(priority = 1, dataProvider = "Credentials")
 	public void LoginWithValidCredentials(String Email, String Password) {
 		loginpage.LoginWithCredentials(Email, Password);
-		System.out.println(myaccountpage.AccountLoginSuccess());
-		// Assert.assertEquals(myaccountpage.AccountLoginSuccess(),testprop.getProperty("sucmsg"));
+		
 
 	}
 
