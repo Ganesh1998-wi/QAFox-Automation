@@ -34,7 +34,7 @@ public class BaseClass {
 				+ "\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\testdata.properties");
 		try {
 			FileInputStream propinputtestfile = new FileInputStream(proptestfile);
-			prop.load(propinputtestfile);
+			testprop.load(propinputtestfile);
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
