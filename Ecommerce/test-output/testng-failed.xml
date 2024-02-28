@@ -6,7 +6,7 @@
       <class name="com.tutorialsninja.qa.testcases.Login">
         <methods>
           <include name="LaunchTheBrowser"/>
-          <include name="LoginWithValidCredentials" invocation-numbers="0 1 2"/>
+          <include name="LoginWithInValidMailidandvalidPassword"/>
           <include name="CloseTheBrowser"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.Login -->

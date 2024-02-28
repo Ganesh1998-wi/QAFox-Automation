@@ -9,17 +9,17 @@ import org.testng.annotations.Test;
 
 import com.tutorialsninja.qa.base.BaseClass;
 import com.tutorialsninja.qa.utils.Utils;
+import com.tutorilasninja.qa.pages.AccountLoginSuccessPage;
 import com.tutorilasninja.qa.pages.AccountSuccessPage;
 import com.tutorilasninja.qa.pages.HomePage;
 import com.tutorilasninja.qa.pages.LoginPage;
-import com.tutorilasninja.qa.pages.MyAccountPage;
 
 public class Login extends BaseClass {
 
 	WebDriver driver;
 	HomePage homepage;
 	LoginPage loginpage;
-	MyAccountPage myaccountpage;
+	AccountLoginSuccessPage accountloginsuccesspage;
 
 	public Login() {
 		super();
@@ -45,8 +45,26 @@ public class Login extends BaseClass {
 
 	@Test(priority = 1, dataProvider = "Credentials")
 	public void LoginWithValidCredentials(String Email, String Password) {
-		loginpage.LoginWithCredentials(Email, Password);
-		Assert.assertEquals(testprop.getProperty("sucmsg"), myaccountpage.AccountLoginSuccess());
+		accountloginsuccesspage = loginpage.LoginWithCredentials(Email, Password);
+		Assert.assertEquals(testprop.getProperty("sucmsg"), accountloginsuccesspage.AccLogin());
+	}
+
+	@Test(priority = 2)
+	public void LoginWithInvalidCredentials() {
+		loginpage.LoginWithCredentials(testprop.getProperty("invalidmail"), testprop.getProperty("invalidpwd"));
+		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
+	}
+
+	@Test(priority = 3)
+	public void LoginWithValidMailIDandInvalidPassword() {
+		loginpage.LoginWithCredentials(testprop.getProperty("validmail"), testprop.getProperty("invalidpwd"));
+		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
+	}
+
+	@Test(priority = 4)
+	public void LoginWithInValidMailidandvalidPassword() {
+		loginpage.LoginWithCredentials(testprop.getProperty("invalidmail"), testprop.getProperty("Validpwd"));
+		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
 	}
 
 }

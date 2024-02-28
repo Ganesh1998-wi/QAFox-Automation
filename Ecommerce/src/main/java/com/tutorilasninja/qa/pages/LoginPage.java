@@ -17,6 +17,9 @@ public class LoginPage {
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement LoginButton;
 
+	@FindBy(xpath = "//div[contains(@class,'alert-dismissible')]")
+	private WebElement WarningInformation;
+
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -28,4 +31,10 @@ public class LoginPage {
 		LoginButton.click();
 		return new AccountLoginSuccessPage(driver);
 	}
+
+	public String Warning() {
+		String Warinfo = WarningInformation.getText();
+		return Warinfo;
+	}
+
 }
