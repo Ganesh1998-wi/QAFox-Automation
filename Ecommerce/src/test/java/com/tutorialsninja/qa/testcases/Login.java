@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.tutorialsninja.qa.base.BaseClass;
 import com.tutorialsninja.qa.utils.Utils;
+import com.tutorilasninja.qa.pages.AccountSuccessPage;
 import com.tutorilasninja.qa.pages.HomePage;
 import com.tutorilasninja.qa.pages.LoginPage;
 import com.tutorilasninja.qa.pages.MyAccountPage;
@@ -45,8 +46,7 @@ public class Login extends BaseClass {
 	@Test(priority = 1, dataProvider = "Credentials")
 	public void LoginWithValidCredentials(String Email, String Password) {
 		loginpage.LoginWithCredentials(Email, Password);
-		
-
+		Assert.assertEquals(testprop.getProperty("sucmsg"), myaccountpage.AccountLoginSuccess());
 	}
 
 }

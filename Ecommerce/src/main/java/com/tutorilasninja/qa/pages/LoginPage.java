@@ -22,10 +22,10 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public MyAccountPage LoginWithCredentials(String email, String password) {
+	public AccountLoginSuccessPage LoginWithCredentials(String email, String password) {
 		EmailAddress.sendKeys(email);
 		Password.sendKeys(password);
 		LoginButton.click();
-		return new MyAccountPage(driver);
+		return new AccountLoginSuccessPage(driver);
 	}
 }

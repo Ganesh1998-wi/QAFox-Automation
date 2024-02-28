@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T20:13:04 IST" name="Default suite" finished-at="2024-02-27T20:13:24 IST" duration-ms="19881">
+  <suite started-at="2024-02-28T06:22:23 IST" name="Default suite" finished-at="2024-02-28T06:22:32 IST" duration-ms="9643">
     <groups>
     </groups>
-    <test started-at="2024-02-27T20:13:04 IST" name="Default test" finished-at="2024-02-27T20:13:24 IST" duration-ms="19881">
+    <test started-at="2024-02-28T06:22:23 IST" name="Default test" finished-at="2024-02-28T06:22:32 IST" duration-ms="9643">
       <class name="com.tutorialsninja.qa.testcases.Login">
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:05 IST" name="LaunchTheBrowser" finished-at="2024-02-27T20:13:14 IST" duration-ms="9878" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:23 IST" name="LaunchTheBrowser" finished-at="2024-02-28T06:22:26 IST" duration-ms="2967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:14 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-27T20:13:15 IST" duration-ms="957" status="FAIL">
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:26 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-28T06:22:27 IST" duration-ms="651" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "com.tutorilasninja.qa.pages.MyAccountPage.AccountLoginSuccess()" because "this.myaccountpage" is null
-at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:48)
+at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -63,15 +63,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:15 IST" name="CloseTheBrowser" finished-at="2024-02-27T20:13:16 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:27 IST" name="CloseTheBrowser" finished-at="2024-02-28T06:22:27 IST" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:16 IST" name="LaunchTheBrowser" finished-at="2024-02-27T20:13:19 IST" duration-ms="3316" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:27 IST" name="LaunchTheBrowser" finished-at="2024-02-28T06:22:29 IST" duration-ms="1868" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:19 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-27T20:13:20 IST" duration-ms="722" status="FAIL">
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:29 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-28T06:22:30 IST" duration-ms="570" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "com.tutorilasninja.qa.pages.MyAccountPage.AccountLoginSuccess()" because "this.myaccountpage" is null
-at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:48)
+at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -123,15 +123,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:20 IST" name="CloseTheBrowser" finished-at="2024-02-27T20:13:20 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:30 IST" name="CloseTheBrowser" finished-at="2024-02-28T06:22:30 IST" duration-ms="162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:20 IST" name="LaunchTheBrowser" finished-at="2024-02-27T20:13:23 IST" duration-ms="3354" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:30 IST" name="LaunchTheBrowser" finished-at="2024-02-28T06:22:32 IST" duration-ms="1944" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:23 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-27T20:13:24 IST" duration-ms="700" status="FAIL">
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:32 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-28T06:22:32 IST" duration-ms="611" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "com.tutorilasninja.qa.pages.MyAccountPage.AccountLoginSuccess()" because "this.myaccountpage" is null
-at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:48)
+at com.tutorialsninja.qa.testcases.Login.LoginWithValidCredentials(Login.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -183,7 +183,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-27T20:13:24 IST" name="CloseTheBrowser" finished-at="2024-02-27T20:13:24 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@4d5d943d]" started-at="2024-02-28T06:22:32 IST" name="CloseTheBrowser" finished-at="2024-02-28T06:22:32 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
