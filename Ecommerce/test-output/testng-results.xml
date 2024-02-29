@@ -1,49 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T16:59:54 IST" name="Default suite" finished-at="2024-02-29T17:00:07 IST" duration-ms="12409">
+  <suite started-at="2024-02-29T17:30:46 IST" name="Suite" finished-at="2024-02-29T17:31:35 IST" duration-ms="49360">
     <groups>
     </groups>
-    <test started-at="2024-02-29T16:59:54 IST" name="Default test" finished-at="2024-02-29T17:00:07 IST" duration-ms="12409">
-      <class name="com.tutorialsninja.qa.testcases.Register">
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T16:59:54 IST" name="LaunchTheBrowser" finished-at="2024-02-29T16:59:57 IST" duration-ms="3286" status="PASS">
+    <test started-at="2024-02-29T17:30:46 IST" name="Test" finished-at="2024-02-29T17:31:35 IST" duration-ms="49360">
+      <class name="com.tutorialsninja.qa.testcases.Search">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:00 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:02 IST" duration-ms="2299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="RegisterWithNewUser()[pri:1, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T16:59:57 IST" name="RegisterWithNewUser" finished-at="2024-02-29T16:59:59 IST" duration-ms="1561" status="PASS">
+        <test-method signature="SearchWithValidProduct()[pri:1, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:02 IST" name="SearchWithValidProduct" finished-at="2024-02-29T17:31:03 IST" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchWithValidProduct -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:03 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:03 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:03 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:05 IST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="SearchWithInValidProduct()[pri:2, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:05 IST" name="SearchWithInValidProduct" finished-at="2024-02-29T17:31:06 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchWithInValidProduct -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:06 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:06 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:06 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:08 IST" duration-ms="2346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="SearchWithoutIValidProductName()[pri:3, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:08 IST" name="SearchWithoutIValidProductName" finished-at="2024-02-29T17:31:09 IST" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchWithoutIValidProductName -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Search@3c46e67a]" started-at="2024-02-29T17:31:09 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:09 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
+      <class name="com.tutorialsninja.qa.testcases.Register">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:46 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:30:49 IST" duration-ms="3526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="RegisterWithNewUser()[pri:1, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:49 IST" name="RegisterWithNewUser" finished-at="2024-02-29T17:30:51 IST" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterWithNewUser -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T16:59:59 IST" name="CloseTheBrowser" finished-at="2024-02-29T16:59:59 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:51 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:30:51 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T16:59:59 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:00:02 IST" duration-ms="2844" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:51 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:30:54 IST" duration-ms="3263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="RegisterWithExistingEmail()[pri:2, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T17:00:02 IST" name="RegisterWithExistingEmail" finished-at="2024-02-29T17:00:03 IST" duration-ms="835" status="PASS">
+        <test-method signature="RegisterWithExistingEmail()[pri:2, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:54 IST" name="RegisterWithExistingEmail" finished-at="2024-02-29T17:30:55 IST" duration-ms="885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterWithExistingEmail -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T17:00:03 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:00:03 IST" duration-ms="159" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:55 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:30:55 IST" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
-        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T17:00:03 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:00:06 IST" duration-ms="2866" status="PASS">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:55 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:30:59 IST" duration-ms="3669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchTheBrowser -->
-        <test-method signature="RegistrationWithWarnings()[pri:3, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T17:00:06 IST" name="RegistrationWithWarnings" finished-at="2024-02-29T17:00:06 IST" duration-ms="494" status="PASS">
+        <test-method signature="RegistrationWithWarnings()[pri:3, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:59 IST" name="RegistrationWithWarnings" finished-at="2024-02-29T17:30:59 IST" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegistrationWithWarnings -->
-        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@2a3b5b47]" started-at="2024-02-29T17:00:06 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:00:07 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Register@313ac989]" started-at="2024-02-29T17:30:59 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:00 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseTheBrowser -->
       </class> <!-- com.tutorialsninja.qa.testcases.Register -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.tutorialsninja.qa.testcases.Login">
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:09 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:12 IST" duration-ms="2955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:12 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-29T17:31:13 IST" duration-ms="705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[delhiganeshv@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:13 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:13 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:13 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:16 IST" duration-ms="2761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:16 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-29T17:31:16 IST" duration-ms="722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2019wa1234@wilp.bits-pilani.ac.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:16 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:17 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:17 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:19 IST" duration-ms="2530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:19 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-02-29T17:31:20 IST" duration-ms="703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ganeshv1998@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:20 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:20 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:20 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:23 IST" duration-ms="3134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithInvalidCredentialsNoofTimes()[pri:2, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:23 IST" name="LoginWithInvalidCredentialsNoofTimes" finished-at="2024-02-29T17:31:24 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredentialsNoofTimes -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:24 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:24 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:24 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:27 IST" duration-ms="3291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithValidMailIDandInvalidPassword()[pri:3, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:27 IST" name="LoginWithValidMailIDandInvalidPassword" finished-at="2024-02-29T17:31:28 IST" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidMailIDandInvalidPassword -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:28 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:28 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:28 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:31 IST" duration-ms="2944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithInValidMailidandvalidPassword()[pri:4, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:31 IST" name="LoginWithInValidMailidandvalidPassword" finished-at="2024-02-29T17:31:32 IST" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInValidMailidandvalidPassword -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:32 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:32 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:32 IST" name="LaunchTheBrowser" finished-at="2024-02-29T17:31:35 IST" duration-ms="2923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithInvalidCredentials()[pri:5, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:35 IST" name="LoginWithInvalidCredentials" finished-at="2024-02-29T17:31:35 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@c730b35]" started-at="2024-02-29T17:31:35 IST" name="CloseTheBrowser" finished-at="2024-02-29T17:31:35 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

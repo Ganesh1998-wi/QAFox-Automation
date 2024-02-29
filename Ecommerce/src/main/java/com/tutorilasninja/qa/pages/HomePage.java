@@ -45,4 +45,10 @@ public class HomePage {
 		SearchIcon.click();
 		return new SearchProduct(driver);
 	}
+
+	public SearchProduct WithoutProductSearch() {
+		SearchIcon.click();
+		return new SearchProduct(driver);
+
+	}
 }
