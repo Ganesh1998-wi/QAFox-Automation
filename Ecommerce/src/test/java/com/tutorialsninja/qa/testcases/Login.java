@@ -50,20 +50,26 @@ public class Login extends BaseClass {
 	}
 
 	@Test(priority = 2)
-	public void LoginWithInvalidCredentials() {
-		loginpage.LoginWithCredentials(testprop.getProperty("invalidmail"), testprop.getProperty("invalidpwd"));
-		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
+	public void LoginWithInvalidCredentialsNoofTimes() {
+		loginpage.LoginWithCredentials(testprop.getProperty("invalidsecmail"), testprop.getProperty("invalidsecpwd"));
+		Assert.assertEquals(testprop.getProperty("Accountlock"), loginpage.Warning());
 	}
 
 	@Test(priority = 3)
 	public void LoginWithValidMailIDandInvalidPassword() {
-		loginpage.LoginWithCredentials(testprop.getProperty("validmail"), testprop.getProperty("invalidpwd"));
+		loginpage.LoginWithCredentials(testprop.getProperty("validmail"), testprop.getProperty("invalidsecpwd"));
 		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
 	}
 
 	@Test(priority = 4)
 	public void LoginWithInValidMailidandvalidPassword() {
-		loginpage.LoginWithCredentials(testprop.getProperty("invalidmail"), testprop.getProperty("Validpwd"));
+		loginpage.LoginWithCredentials(testprop.getProperty("InvalidMailId"), testprop.getProperty("Validpwd"));
+		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
+	}
+
+	@Test(priority = 5)
+	public void LoginWithInvalidCredentials() {
+		loginpage.LoginWithCredentials(testprop.getProperty("InvalidMailId"), testprop.getProperty("InvalidPassword"));
 		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
 	}
 
