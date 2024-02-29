@@ -35,6 +35,27 @@ public class RegisterPage {
 	@FindBy(xpath = "//input[contains(@value,'Continue')]")
 	private WebElement Continue;
 
+	@FindBy(xpath = "//div[contains(@class,'alert-dismissible')]")
+	private WebElement ExistingMailWarning;
+
+	@FindBy(xpath = "//div[contains(@class,'alert-dismissible')]")
+	private WebElement PrivacyPolicyMsg;
+
+	@FindBy(xpath = "//div[@class='col-sm-10']//div[text()='First Name must be between 1 and 32 characters!']")
+	private WebElement FirstNameWar;
+
+	@FindBy(xpath = "//div[@class='col-sm-10']//div[text()='Last Name must be between 1 and 32 characters!']")
+	private WebElement LastNameWar;
+
+	@FindBy(xpath = "//div[@class='col-sm-10']//div[text()='E-Mail Address does not appear to be valid!']")
+	private WebElement EmailWar;
+
+	@FindBy(xpath = "//div[@class='col-sm-10']//div[text()='Telephone must be between 3 and 32 characters!']")
+	private WebElement PhonenumberWar;
+
+	@FindBy(xpath = "//div[@class='col-sm-10']//div[text()='Password must be between 4 and 20 characters!']")
+	private WebElement PasswordWar;
+
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -54,4 +75,44 @@ public class RegisterPage {
 		return new AccountSuccessPage(driver);
 	}
 
+	public String EmailWarning() {
+		String EmailWarinfo = ExistingMailWarning.getText();
+		return EmailWarinfo;
+	}
+
+	public void Errors() {
+		NewsLetter.click();
+		Continue.click();
+	}
+
+	public String FirstNameError() {
+		String firsterror = FirstNameWar.getText();
+		return firsterror;
+	}
+
+	public String LastNameError() {
+		String lasterror = LastNameWar.getText();
+		return lasterror;
+
+	}
+
+	public String EmailError() {
+		String emailerror = EmailWar.getText();
+		return emailerror;
+	}
+
+	public String PhonenumberError() {
+		String Phoneerr = PhonenumberWar.getText();
+		return Phoneerr;
+	}
+
+	public String PasswordError() {
+		String passerror = PasswordWar.getText();
+		return passerror;
+	}
+
+	public String PrivacyError() {
+		String privacyerror = PrivacyPolicyMsg.getText();
+		return privacyerror;
+	}
 }

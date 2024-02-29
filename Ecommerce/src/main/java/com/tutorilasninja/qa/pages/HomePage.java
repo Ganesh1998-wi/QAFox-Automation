@@ -36,7 +36,7 @@ public class HomePage {
 
 	public RegisterPage NavigateToRegistration() {
 		MyAccountButton.click();
-		LoginButton.click();
+		RegisterButton.click();
 		return new RegisterPage(driver);
 	}
 

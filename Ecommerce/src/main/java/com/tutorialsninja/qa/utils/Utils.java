@@ -14,7 +14,7 @@ import io.cucumber.java.sl.Ce;
 
 public class Utils {
 
-	public String DateToAppend() {
+	public static String DateToAppend() {
 		Date date = new Date();
 		String EmailId = date.toString().replace(":", "_").replace(" ", "_");
 		return "delhiganeshv" + EmailId + "@gmail.com";

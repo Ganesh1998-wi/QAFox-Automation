@@ -52,7 +52,7 @@ public class Login extends BaseClass {
 	@Test(priority = 2)
 	public void LoginWithInvalidCredentialsNoofTimes() {
 		loginpage.LoginWithCredentials(testprop.getProperty("invalidsecmail"), testprop.getProperty("invalidsecpwd"));
-		Assert.assertEquals(testprop.getProperty("Accountlock"), loginpage.Warning());
+		Assert.assertEquals(testprop.getProperty("Warninglogin"), loginpage.Warning());
 	}
 
 	@Test(priority = 3)
