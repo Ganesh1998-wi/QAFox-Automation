@@ -20,8 +20,7 @@ public class BaseClass {
 
 	public BaseClass() {
 		prop = new Properties();
-		File propfile = new File(System.getProperty("user.dir")
-				+ "/Users/vd40032765/Documents/GitHub/QAFox-Automation/Ecommerce/src/main/java/com/tutorialsninja/qa/properties/config.properties");
+		File propfile = new File(System.getProperty("/Ecommerce/src/main/java/com/tutorialsninja/qa/properties/config.properties"));
 		try {
 			FileInputStream propinputfile = new FileInputStream(propfile);
 			prop.load(propinputfile);
@@ -30,8 +29,7 @@ public class BaseClass {
 		}
 
 		testprop = new Properties();
-		File proptestfile = new File(System.getProperty("user.dir")
-				+ "/Users/vd40032765/Documents/GitHub/QAFox-Automation/Ecommerce/src/main/java/com/tutorialsninja/qa/testdata/testdata.properties");
+		File proptestfile = new File(System.getProperty("/Users/vd40032765/Documents/GitHub/QAFox-Automation/Ecommerce/src/main/java/com/tutorialsninja/qa/testdata/testdata.properties"));
 		try {
 			FileInputStream propinputtestfile = new FileInputStream(proptestfile);
 			testprop.load(propinputtestfile);

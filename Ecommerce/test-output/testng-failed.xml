@@ -5,9 +5,13 @@
     <classes>
       <class name="com.tutorialsninja.qa.testcases.Login">
         <methods>
+          <include name="LoginWithValidMailIDandInvalidPassword"/>
           <include name="LaunchTheBrowser"/>
+          <include name="LoginWithInvalidCredentialsNoofTimes"/>
           <include name="LoginWithValidCredentials"/>
+          <include name="LoginWithInValidMailidandvalidPassword"/>
           <include name="CloseTheBrowser"/>
+          <include name="LoginWithInvalidCredentials"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.Login -->
     </classes>

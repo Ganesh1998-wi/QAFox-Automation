@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-07T15:54:48 IST" name="Default suite" finished-at="2024-11-07T15:54:48 IST" duration-ms="24">
+  <suite started-at="2024-11-07T16:00:45 IST" name="Default suite" finished-at="2024-11-07T16:00:55 IST" duration-ms="10169">
     <groups>
     </groups>
-    <test started-at="2024-11-07T15:54:48 IST" name="Default test" finished-at="2024-11-07T15:54:48 IST" duration-ms="24">
+    <test started-at="2024-11-07T16:00:45 IST" name="Default test" finished-at="2024-11-07T16:00:55 IST" duration-ms="10169">
       <class name="com.tutorialsninja.qa.testcases.Login">
-        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@3e27ba32]" started-at="2024-11-07T15:54:48 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-11-07T15:54:48 IST" duration-ms="0" status="FAIL">
+        <test-method signature="LoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:45 IST" name="LoginWithValidCredentials" data-provider="Credentials" finished-at="2024-11-07T16:00:45 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFWorkbook.getSheet(String)" because "workbook" is null]]>
@@ -55,6 +55,269 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedExce
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginWithValidCredentials -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:45 IST" name="LaunchTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="10131" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.tutorialsninja.qa.base.BaseClass.LaunchTheDriver(BaseClass.java:51)
+at com.tutorialsninja.qa.testcases.Login.LaunchTheBrowser(Login.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithInvalidCredentialsNoofTimes()[pri:2, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LoginWithInvalidCredentialsNoofTimes" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.tutorialsninja.qa.base.BaseClass.LaunchTheDriver(BaseClass.java:51)
+at com.tutorialsninja.qa.testcases.Login.LaunchTheBrowser(Login.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredentialsNoofTimes -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="CloseTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method signature="LoginWithValidMailIDandInvalidPassword()[pri:3, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LoginWithValidMailIDandInvalidPassword" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.tutorialsninja.qa.base.BaseClass.LaunchTheDriver(BaseClass.java:51)
+at com.tutorialsninja.qa.testcases.Login.LaunchTheBrowser(Login.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithValidMailIDandInvalidPassword -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LaunchTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="CloseTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LaunchTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method signature="LoginWithInValidMailidandvalidPassword()[pri:4, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LoginWithInValidMailidandvalidPassword" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.tutorialsninja.qa.base.BaseClass.LaunchTheDriver(BaseClass.java:51)
+at com.tutorialsninja.qa.testcases.Login.LaunchTheBrowser(Login.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInValidMailidandvalidPassword -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="CloseTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
+        <test-method signature="LoginWithInvalidCredentials()[pri:5, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LoginWithInvalidCredentials" finished-at="2024-11-07T16:00:55 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.base/java.util.Objects.requireNonNull(Objects.java:233)
+at java.base/java.util.ImmutableCollections$Map1.<init>(ImmutableCollections.java:1112)
+at java.base/java.util.Map.of(Map.java:1365)
+at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:313)
+at com.tutorialsninja.qa.base.BaseClass.LaunchTheDriver(BaseClass.java:51)
+at com.tutorialsninja.qa.testcases.Login.LaunchTheBrowser(Login.java:30)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="LaunchTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method is-config="true" signature="CloseTheBrowser()[pri:0, instance:com.tutorialsninja.qa.testcases.Login@563f38c4]" started-at="2024-11-07T16:00:55 IST" name="CloseTheBrowser" finished-at="2024-11-07T16:00:55 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseTheBrowser -->
       </class> <!-- com.tutorialsninja.qa.testcases.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
